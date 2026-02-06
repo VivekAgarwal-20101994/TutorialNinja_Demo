@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">./logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <RollingFile name="File" fileName="${basePath}/automation.log"
+                     filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <!--AppenderRef ref="Console"/>-->
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+<!-- //ye logging concept h
+	Selenium Java automation mein Logging ka matlab hai har action ka record rakhna (jaise: "Browser opened", "Clicked on Login", "Test Failed"). Iske liye Log4j2 sabse popular aur powerful library hai.
+
+Hybrid Framework mein logging ka use debug karne ke liye kiya jata hai taaki agar test fail ho, toh aapko report ke saath-saath console/file mein details mil jayein.
+
+1. Prerequisite (Maven Dependency)
+Sabse pehle apne pom.xml mein Log4j2 ki dependencies add karein:
+
+XML
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.20.0</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+</dependency>
+2. Base Test mein Logger Setup karna
+Aapko hamesha Logger ko Base Class mein initialize karna chahiye taaki har test class use use kar sake.
+
+Java
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class BaseTest {
+    public static WebDriver driver;
+    // Logger initialize karna
+    public static Logger log = LogManager.getLogger(BaseTest.class.getName());
+
+    @BeforeMethod
+    public void setup() {
+        log.info("- Test Case Execution Started -"); //need to use 3 dashes instead of 1
+        driver = new ChromeDriver();
+        log.info("Chrome Browser Launched");
+        
+        driver.get("https://example.com");
+        log.info("Navigated to URL");
+    }
+}
+3. Test Case mein Logs likhna
+Jab aap BaseTest ko extend karte hain, toh aap log object ko kahin bhi use kar sakte hain:
+
+Java
+
+public class LoginTest extends BaseTest {
+
+    @Test
+    public void testLogin() {
+        log.info("Starting login test...");
+        
+        driver.findElement(By.id("user")).sendKeys("admin");
+        log.debug("Entered username"); // Debug level for detailed info
+        
+        driver.findElement(By.id("pass")).sendKeys("123");
+        log.debug("Entered password");
+        
+        if(driver.getTitle().equals("Home")) {
+            log.info("Login Successful!");
+        } else {
+            log.error("Login Failed! Title mismatch.");
+        }
+    }
+}
+4. Log Levels (Kaunsa kab use karein?)
+Ek hybrid framework mein levels ka sahi use zaroori hai:
+
+Level	Kab use karein?
+INFO	General steps ke liye (e.g., "Browser Started", "Test Finished").
+DEBUG	Choti details ke liye (e.g., "Typing 'Admin' in textbox").
+ERROR	Jab koi assertion fail ho ya element na mile.
+FATAL	Jab test execution hi ruk jaye (e.g., DB connection failed).
+WARN	Jab kuch unexpected ho lekin test chalta rahe.
+
+Export to Sheets
+
+5. log4j2.xml Configuration
+Aapko src/test/resources folder mein ek log4j2.xml file banani hogi. Ye file batati hai ki logs Console par dikhne chahiye ya File mein save hone chahiye.
+
+Tip: Log4j ko configure karke aap ek logs.log file generate kar sakte hain jo har run ka poora itihaas (history) save rakhti hai.
+
+Kya aap chahte hain ki main aapko ek standard log4j2.xml file ka code doon jo Console aur File dono mein logs save kare?
+
+//Logging mein Levels ka use isliye kiya jata hai taaki hum decide kar sakein ki kaunsa message kitna zaroori hai. Log4j2 mein levels ek Hierarchy (rank) follow karte hain.Agar aap INFO level set karte hain, toh usse upar ke saare levels (Warn, Error, Fatal) bhi print honge, lekin usse niche ka (DEBUG) print nahi hoga.Log Levels Hierarchy (Low to High)LevelPriorityDescription (Kab use karein?)ExampleALLLowestSaare logs print karta hai.Development phase mein.DEBUGLowDetailed information jo debugging ke kaam aaye.log.debug("Element locator found: id=login")INFOMediumGeneral events jo batate hain ki test sahi chal raha hai.log.info("Browser launched successfully")WARNMediumKuch unexpected hua, par execution ruka nahi.log.warn("Database connection took too long")ERRORHighTest fail hone par ya exception aane par.log.error("Assertion Failed: Title mismatch")FATALHighestSevere error jis se application ya framework crash ho jaye.log.fatal("Config file missing! Stopping test.")OFFNoneKoi log print nahi hoga.Production/Final report phase mein.Inhe Framework mein kaise use karte hain?Aap apni log4j2.xml file mein ek Root Level set karte hain. Maan lijiye aapne Level INFO rakha hai:XML<Loggers>
+   
+Level,	Priority,	Description (Kab use karein?),	Example
+ALL,	Lowest,		Saare logs print karta hai.,	Development phase mein.
+DEBUG,	Low,		Detailed information jo debugging ke kaam aaye.,"log.debug(""Element locator found: id=login"")"
+INFO,	Medium,		General events jo batate hain ki test sahi chal raha hai.,"log.info(""Browser launched successfully"")"
+WARN,	Medium,		"Kuch unexpected hua, par execution ruka nahi.","log.warn(""Database connection took too long"")"
+ERROR,	High,		Test fail hone par ya exception aane par.,"log.error(""Assertion Failed: Title mismatch"")"
+FATAL,	Highest,	Severe error jis se application ya framework crash ho jaye.,"log.fatal(""Config file missing! Stopping test."")"
+OFF,	None,		Koi log print nahi hoga.,Production/Final report phase mein.
+
+
+    <Root level="info"> 
+        <AppenderRef ref="Console"/>
+    </Root>
+</Loggers>
+Ab agar aapne code mein log.debug() likha hai, toh wo Console par nahi dikhega.Lekin log.info(), log.error(), aur log.warn() dikhai denge.
+Best Practice for Hybrid Framework:
+1: Automation Steps ke liye log.info() use karein.
+2: Element identification aur Values check karne ke liye log.debug() use karein.
+3: Try-Catch block ke andar log.error() use karein taaki exceptions record ho sakein.
+-->
+

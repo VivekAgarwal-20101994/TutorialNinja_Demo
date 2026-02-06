@@ -1,0 +1,18 @@
+2026-01-20 00:12:15.733 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-20 00:12:16.803 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-20 00:12:17.792 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-20 00:12:18.968 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-20 00:12:18.968 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-20 00:13:13.716 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-20 00:13:14.563 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-20 00:13:16.501 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-20 00:13:16.703 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-20 00:13:16.703 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-20 00:43:00.461 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-20 00:43:01.325 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-20 00:43:03.262 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-20 00:43:03.294 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-20 00:43:03.294 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-20 00:43:50.733 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-20 00:43:52.486 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-20 00:43:52.486 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****

@@ -1,0 +1,8 @@
+2026-01-24 14:09:44.942 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-24 14:09:45.502 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-24 14:09:47.078 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-24 14:09:47.117 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-24 14:09:47.118 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-24 14:09:49.032 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-24 14:09:50.314 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-24 14:09:50.315 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****

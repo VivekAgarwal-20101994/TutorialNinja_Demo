@@ -1,0 +1,93 @@
+2026-01-23 12:52:15.305 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 12:52:16.918 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 12:52:18.861 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 12:52:18.903 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-23 12:52:18.903 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 12:52:21.029 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 12:52:22.670 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 12:52:22.670 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
+2026-01-23 12:54:37.749 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 12:54:39.186 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 12:54:39.186 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
+2026-01-23 13:08:50.756 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 13:08:52.950 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 13:08:52.958 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 13:09:04.537 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 13:09:04.537 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 13:09:16.091 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 13:09:16.104 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 13:09:27.660 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 13:09:27.668 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 13:09:29.810 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 16:00:23.900 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 16:00:26.138 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 16:00:26.150 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 16:00:37.811 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 16:00:37.829 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 16:00:49.553 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 16:00:49.561 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 16:01:01.004 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 16:01:01.020 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 16:01:03.009 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 20:04:50.907 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 20:04:51.744 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 20:04:53.585 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 20:04:53.623 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-23 20:04:53.623 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 20:05:22.814 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 20:05:23.697 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 20:05:24.679 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 20:05:25.596 [main] ERROR testCases.TC001_accountRegistration - Login failed due to:expected [Your Account Has Been Createdd!] but found [Your Account Has Been Created!]
+2026-01-23 20:05:25.596 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 20:07:06.463 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 20:07:08.444 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 20:07:10.586 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 20:07:10.648 [main] ERROR testCases.TC001_accountRegistration - Login failed due to:expected [Your Account Has Been Createdd!] but found [Your Account Has Been Created!]
+2026-01-23 20:07:10.648 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 20:07:14.727 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 20:07:16.631 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 20:07:16.631 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
+2026-01-23 21:00:21.915 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 21:00:22.794 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 21:00:24.740 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 21:00:24.780 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-23 21:00:24.780 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 21:00:26.745 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 21:00:28.237 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 21:00:28.237 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
+2026-01-23 21:00:32.846 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:00:35.272 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:00:35.277 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:00:46.228 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:00:46.232 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:00:57.822 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:00:57.822 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:01:09.158 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:01:09.169 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:01:11.325 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:04:07.118 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 21:04:08.072 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 21:04:09.039 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 21:04:10.143 [main] INFO  testCases.TC001_accountRegistration - Login passed and account has been created
+2026-01-23 21:04:10.143 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 21:04:12.493 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 21:04:14.041 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 21:04:14.041 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
+2026-01-23 21:04:19.457 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:04:21.580 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:04:21.584 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:04:33.037 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:04:33.042 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:04:43.776 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:04:43.777 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:04:54.625 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:04:54.632 [main] INFO  testCases.TC003_LoginDDT - ****Starting TC003_LoginDDT****
+2026-01-23 21:04:56.868 [main] INFO  testCases.TC003_LoginDDT - ****Finished Test-Case****
+2026-01-23 21:20:10.606 [main] INFO  testCases.TC001_accountRegistration - ****Starting Test-Case****
+2026-01-23 21:20:11.351 [main] INFO  testCases.TC001_accountRegistration - ****Opened homepage and clicked on register button****
+2026-01-23 21:20:13.183 [main] INFO  testCases.TC001_accountRegistration - ****Sent user details for registration****
+2026-01-23 21:20:13.232 [main] ERROR testCases.TC001_accountRegistration - Login failed due to:expected [Your Account Has Been Createdu!] but found [Your Account Has Been Created!]
+2026-01-23 21:20:13.232 [main] INFO  testCases.TC001_accountRegistration - ****Finished Test-Case****
+2026-01-23 21:20:15.938 [main] INFO  testCases.TC002_validLogin - ****Starting Test-Case****
+2026-01-23 21:20:17.411 [main] INFO  testCases.TC002_validLogin - Login test passed
+2026-01-23 21:20:17.411 [main] INFO  testCases.TC002_validLogin - ****Finished Test-Case****
