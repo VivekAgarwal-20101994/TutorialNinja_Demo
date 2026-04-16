@@ -148,7 +148,7 @@ public class BaseTest {
 	public String captureScreen(String tname) {
 		
 		SimpleDateFormat df= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); //need to use SimpleDateFormat to create timestamp format
-		Date dt= new Date(); //using date class of class to create the date
+		Date dt= new Date(); //using date class of class to capture the date
 		String timeStamp= df.format(dt);
 		
 		TakesScreenshot ts= (TakesScreenshot) driver;

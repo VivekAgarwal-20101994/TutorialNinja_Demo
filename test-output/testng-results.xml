@@ -2,16 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-06T20:00:10 IST" name="Default suite" finished-at="2026-02-06T20:00:10 IST" duration-ms="69">
+  <suite started-at="2026-02-13T20:18:51 IST" name="MasterSuite" finished-at="2026-02-13T20:18:57 IST" duration-ms="6271">
     <groups>
+      <group name="Master">
+        <method signature="TC001_accountRegistration.accountRegistration()[pri:0, instance:testCases.TC001_accountRegistration@77c2494c]" name="accountRegistration" class="testCases.TC001_accountRegistration"/>
+      </group> <!-- Master -->
+      <group name="Regression">
+        <method signature="TC001_accountRegistration.accountRegistration()[pri:0, instance:testCases.TC001_accountRegistration@77c2494c]" name="accountRegistration" class="testCases.TC001_accountRegistration"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-02-06T20:00:10 IST" name="Default test" finished-at="2026-02-06T20:00:10 IST" duration-ms="69">
-      <class name="testCases.Git_demo">
-        <test-method signature="git_test()[pri:0, instance:testCases.Git_demo@408d971b]" started-at="2026-02-06T20:00:10 IST" name="git_test" finished-at="2026-02-06T20:00:10 IST" duration-ms="18" status="PASS">
+    <test started-at="2026-02-13T20:18:51 IST" name="Test" finished-at="2026-02-13T20:18:57 IST" duration-ms="6271">
+      <class name="testCases.TC001_accountRegistration">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_accountRegistration@77c2494c]" started-at="2026-02-13T20:18:51 IST" name="setUp" finished-at="2026-02-13T20:18:55 IST" duration-ms="3350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- git_test -->
-      </class> <!-- testCases.Git_demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="accountRegistration()[pri:0, instance:testCases.TC001_accountRegistration@77c2494c]" started-at="2026-02-13T20:18:55 IST" name="accountRegistration" finished-at="2026-02-13T20:18:57 IST" duration-ms="2532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_accountRegistration@77c2494c]" started-at="2026-02-13T20:18:57 IST" name="tearDown" finished-at="2026-02-13T20:18:57 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001_accountRegistration -->
+    </test> <!-- Test -->
+  </suite> <!-- MasterSuite -->
 </testng-results>
